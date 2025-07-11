@@ -9,24 +9,36 @@
  
   
 </head>
+
+
 <body>
-  <div class="container header-container">
-    <div class="logo">NAMANGAN CHANGAN</div>
-
-    <nav id="nav-menu">
-      <a href="index.html">Bosh sahifa</a>
-      <a href="general_brands.html">Brendlar</a>
-      <a href="test-drive.html">Test Drive</a>
-    </nav>
-
-    <!-- Hamburger Icon -->
-    <div class="hamburger" id="hamburger">
-      &#9776;
+  <header class="header-container">
+    <div class="container">
+      <div class="logo">NAMANGAN CHANGAN</div>
+  
+      <nav id="nav-menu">
+        <a href="index.html">Bosh sahifa</a>
+        <a href="general_brands.html">Brendlar</a>
+        <a href="test-drive.html">Test Drive</a>
+      </nav>
+  
+      <div class="hamburger" id="hamburger">&#9776;</div>
     </div>
-  </div>
+  </header>
+  
 
-
-
+  <script>
+    const header = document.querySelector("header");
+  
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 100) {
+        header.classList.add("scrolled");
+      } else {
+        header.classList.remove("scrolled");
+      }
+    });
+  </script>
+  
 
   <section class="hero-video">
     <video autoplay muted loop playsinline class="hero-bg-video">
@@ -41,11 +53,11 @@
   
   
 
-  
+<!--   
   <section class="brands-section">
     <h2 class="section-title">BIZNING MASHXUR BRENDLARIMIZ</h2>
     <div class="brand-tiles">
-      <!-- Repeat this block for each brand -->
+
       <a href="brands/deepal.html" class="brand-tile" style="background-image: url('assets/images/brand-deepal.jpg');">
         <img src="assets/images/logo-deepal.png" alt="Deepal" />
       </a>
@@ -65,12 +77,113 @@
 
     </div>
   </section>
+ -->
+
+
+<br>
+
+
+<style>
+  .brand-banner {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  height: 70vh;
+  width: 100%;
+  scroll-snap-type: x mandatory;
+}
+.brand-panel {
+  flex: 0 0 25%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  scroll-snap-align: start;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: skew(-10deg);
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.brand-content {
+  transform: skew(10deg); /* cancels out the parent skew */
+  text-align: center;
+  color: white;
+}
+
+.brand-content img {
+  width: 80px;
+  height: auto;
+  filter: brightness(0) invert(1);
+  margin-bottom: 10px;
+}
+
+.brand-content p {
+  font-size: 1.1em;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+
+@media (max-width: 768px) {
+  .brand-panel {
+    flex: 0 0 80%;
+  }
+
+  .brand-content img {
+    width: 60px;
+  }
+
+  .brand-content p {
+    font-size: 1em;
+  }
+}
+
+
+</style>
+
+  <section class="brand-banner">
+
+    
+    <div class="brand-panel" style="background-image: url('assets/images/bg-brands.png');">
+      <div class="brand-content">
+        <img src="assets/images/logo-changan.png" alt="Changan Hex" />
+        <p>CHANGAN</p>
+      </div>
+    </div>
+  
+    <div class="brand-panel" style="background-image: url('assets/images/bg-brand2.png');">
+      <div class="brand-content">
+        <img src="assets/logo-deepal.png" alt="Deepal" />
+        <p>DEEPAL</p>
+      </div>
+    </div>
+  
+    <div class="brand-panel" style="background-image: url('assets/images/bg-brands3.png');">
+      <div class="brand-content">
+        <img src="assets/logo-avatr.png" alt="Avatr" />
+        <p>AVATR</p>
+      </div>
+    </div>
+
+    <div class="brand-panel" style="background-image: url('assets/images/bg-brands4.png');">
+      <div class="brand-content">
+        <img src="assets/images/logo-nevo.png" alt="Changan Tech" />
+        <p>NEVO</p>
+      </div>
+    </div>
+
+  </section>
+
 
   
 
+
 <style>
   .site-footer {
-  background-color: #0a0a0a;
+  background-color: #002B7F;
   color: #f0f0f0;
   padding: 60px 20px 30px;
   font-family: 'Montserrat', sans-serif;
@@ -149,8 +262,6 @@
 }
 
 </style>
-
-
 <footer class="site-footer">
   <div class="footer-container">
     <div class="footer-brand">
@@ -179,9 +290,6 @@
     &copy; 2025 Namangan Changan AutoSalon. All rights reserved.
   </div>
 </footer>
-
-
-
   <script>
     const hamburger = document.getElementById('hamburger');
     const navMenu = document.getElementById('nav-menu');
@@ -190,8 +298,6 @@
       navMenu.classList.toggle('active');
     });
   </script>
-
-
 
 </body>
 </html>
