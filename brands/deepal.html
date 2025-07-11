@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Deepal Models – Namangan Changan</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <script src="js/script.js"></script>
+</head>
+<body>
+    <div class="container header-container">
+      <div class="logo">NAMANGAN CHANGAN</div>  
+  
+      <nav id="nav-menu">
+        <a href="../index.html">Home</a>
+        <a href="brands.html">Brands</a>
+        <a href="test-drive.html">Test Drive</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+  
+      <!-- Hamburger Icon -->
+      <div class="hamburger" id="hamburger">
+        &#9776;
+      </div>
+    </div>
+
+<section class="brand-info">
+  <div class="container">
+    <h1>Deepal – Aqlli elektr avtomobillari</h1>
+    <p>
+      Dvigatel turi: Gibrid<br>
+      Hajmi: 1.5 l TURBO<br>
+      Uzatuv tizimi: To‘liq (4 g‘ildirakdan tortish)<br>
+      Maksimal quvvat: 430 ot kuchi<br>
+      Maksimal tezlik: 185 km/soat<br>
+      0 dan 100 km/soatgacha tezlanish: 6.3 soniya<br>
+      Batareya sig‘imi: 35.07 kVt⋅soat<br>
+      Batareya turi: Lityum-temir-fosfat (LFP)<br>
+      Elektrda yurish zaxirasi: 142 km<br>
+      Benzinda yurish zaxirasi: 800 km<br>
+      Yonilg‘i baki hajmi: 60 litr<br>
+      Yonilg‘i sarfi: 7.4 l<br>
+      Yonilg‘i turi: AI-92<br>
+      To‘liq og‘irligi: 2800 kg<br>
+      Kuzov o‘lchamlari (Uz x En x Bo): 5010 x 1985 x 1895 mm<br>
+    </p>
+  </div>
+</section>
+
+<section class="model-catalog">
+  <div class="container">
+    <h2>Our Deepal Models</h2>
+    
+    <div class="carousel-track">
+      <!-- Model Cards -->
+      <a href="../models/changan1.html" class="card">
+        <img src="../brands/model_1.png" alt="Deepal L07" />
+        <div class="card-body">
+          <h3>Deepal L07</h3>
+          <p>Sedan · 700km · L2+ Autopilot</p>
+        </div>
+      </a>
+
+      <a href="../models/changan2.html" class="card">
+        <img src="../brands/model_1.png" alt="Deepal S05" />
+        <div class="card-body">
+          <h3>Deepal S05</h3>
+          <p>EV · 610km · AI Dashboard</p>
+        </div>
+      </a>
+
+      <a href="../models/changan3.html" class="card">
+        <img src="../brands/model_1.png" alt="Deepal X07" />
+        <div class="card-body">
+          <h3>Deepal X07</h3>
+          <p>Crossover · 750km · Smart Assist</p>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <style>
+    .model-catalog {
+      padding: 40px 20px;
+      background: #f7f7f7;
+    }
+
+    .model-catalog h2 {
+      text-align: center;
+      font-size: 2em;
+      color: #002B7F;
+      margin-bottom: 20px;
+    }
+
+    .carousel-track {
+      display: flex;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      -webkit-overflow-scrolling: touch;
+      gap: 20px;
+      padding: 0 10px 20px;
+    }
+
+    .carousel-track::-webkit-scrollbar {
+      display: none;
+    }
+
+    .carousel-track .card {
+      flex: 0 0 260px;
+      scroll-snap-align: start;
+      background: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+      text-decoration: none;
+      color: inherit;
+      transition: transform 0.3s ease;
+    }
+
+    .carousel-track .card:hover {
+      transform: scale(1.05);
+    }
+
+    .carousel-track .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .carousel-track .card-body {
+      padding: 16px;
+      color: #002B7F;
+    }
+
+    .carousel-track .card-body h3 {
+      font-size: 1.2em;
+      margin-bottom: 6px;
+    }
+
+    .carousel-track .card-body p {
+      font-size: 0.95em;
+      color: #333;
+    }
+
+    @media (max-width: 768px) {
+      .carousel-track {
+        gap: 15px;
+        padding-left: 10px;
+      }
+
+      .carousel-track .card {
+        flex: 0 0 85%;
+      }
+
+      .card-body h3 {
+        font-size: 1em;
+      }
+
+      .card-body p {
+        font-size: 0.85em;
+      }
+    }
+  </style>
+</section>
+
+
+
+<footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-brand">
+      <h2>NAMANGAN CHANGAN</h2>
+      <p>Smart Your Future</p>
+    </div>
+
+    <div class="footer-contact">
+      <h3>Contact Us</h3>
+      <p>📞 +998 99 123 45 67</p>
+      <p>📍 Namangan, Uzbekistan</p>
+      <p>🕐 Mon–Sat: 9:00 – 18:00</p>
+    </div>
+
+    <div class="footer-social">
+      <h3>Follow Us</h3>
+      <div class="social-icons">
+        <a href="#" target="_blank" title="Telegram">📲</a>
+        <a href="#" target="_blank" title="Instagram">📸</a>
+        <a href="#" target="_blank" title="Facebook">📘</a>
+        <a href="#" target="_blank" title="YouTube">▶️</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    &copy; 2025 Namangan Changan AutoSalon. All rights reserved.
+  </div>
+</footer>
+
+
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('nav-menu');
+  
+    hamburger.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+    });
+  </script>
+
+
+
+<script src="../js/script.js"></script>
+</body>
+</html>

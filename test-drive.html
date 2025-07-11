@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Test Drive uchun ro'yxatdan o'ting</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/script.js"></script>
+ 
+
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f5f7fa;
+      margin: 0;
+      padding: 0;
+      color: #222;
+    }
+
+    header {
+      background: #fff;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .logo {
+      font-size: 1.6em;
+      font-weight: bold;
+      color: #002B7F;
+    }
+
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #002B7F;
+      font-weight: 500;
+    }
+
+    .contact-section {
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    .contact-section h1 {
+      font-size: 2.5em;
+      color: #002B7F;
+      margin-bottom: 20px;
+    }
+
+    .contact-section p {
+      font-size: 1.2em;
+      color: #444;
+      max-width: 800px;
+      margin: 0 auto 40px;
+    }
+
+    .telegram-button {
+      background: #229ED9;
+      color: white;
+      font-size: 1.1em;
+      padding: 15px 30px;
+      border: none;
+      border-radius: 8px;
+      text-decoration: none;
+      display: inline-block;
+      transition: background 0.3s ease;
+    }
+
+    .telegram-button:hover {
+      background: #1a8abf;
+    }
+
+    footer {
+      background: #002B7F;
+      color: white;
+      text-align: center;
+      padding: 25px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container header-container">
+    <div class="logo">NAMANGAN CHANGAN</div>
+
+    <nav id="nav-menu">
+      <a href="index.html">Bosh sahifa</a>
+      <a href="general_brands.html">Brendlar</a>
+      <a href="test-drive.html">Test Drive</a>
+    </nav>
+
+    <!-- Hamburger Icon -->
+    <div class="hamburger" id="hamburger">
+      &#9776;
+    </div>
+  </div>
+
+
+
+<section class="contact-section">
+  <h1>Telegram profilimiz</h1>
+  <p>Bizning brendlarimiz haqida ko'proq ma'lumot olish yoki test drive uchun ro'yxatdan o'tish uchun telegram orqali bizga bog'laning</p>
+  
+  <!-- Change @YourUsername to your real Telegram username or bot -->
+  <a href="https://t.me/Abubakirov_Axadjon" target="_blank" class="telegram-button">Bog'lanish</a>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-brand">
+      <h2>NAMANGAN CHANGAN</h2>
+      <p>Smart Your Future</p>
+    </div>
+
+    <div class="footer-contact">
+      <h3>Bizga bo'g'lanish</h3>
+      <p>📞 +998 99 123 45 67</p>
+      <p>📍 Namangan, O'zbekiston</p>
+      
+    </div>
+
+    <div class="footer-social">
+      <h3>Ijtimoiy tarmoqlarimiz</h3>
+      <div class="social-icons">
+        <a href="#" target="_blank" title="Telegram">📲</a>
+        <a href="#" target="_blank" title="Instagram">📸</a>
+        <a href="#" target="_blank" title="YouTube">▶️</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    &copy; 2025 Namangan Changan AutoSalon. All rights reserved.
+  </div>
+</footer>
+
+
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('nav-menu');
+  
+    hamburger.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+    });
+  </script>
+
+</body>
+</html>

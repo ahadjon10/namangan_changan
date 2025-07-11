@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Namangan Changan AutoSalon</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/script.js"></script>
+ 
+  
+</head>
+
+
+  <div class="container header-container">
+    <div class="logo">NAMANGAN CHANGAN</div>
+
+    <nav id="nav-menu">
+      <a href="index.html">Bosh sahifa</a>
+      <a href="general_brands.html">Brendlar</a>
+      <a href="test-drive.html">Test Drive</a>
+    </nav>
+
+    <!-- Hamburger Icon -->
+    <div class="hamburger" id="hamburger">
+      &#9776;
+    </div>
+  </div>
+
+
+
+
+  
+  <section class="brands-section">
+    <h2 class="section-title">BIZNING MASHXUR BRENDLARIMIZ</h2>
+    <div class="brand-tiles">
+      <!-- Repeat this block for each brand -->
+      <a href="brands/deepal.html" class="brand-tile" style="background-image: url('assets/images/brand-deepal.jpg');">
+        <img src="assets/images/logo-deepal.png" alt="Deepal" />
+      </a>
+  
+  
+      <a href="brands/deepal.html" class="brand-tile" style="background-image: url('assets/images/brand-deepal.jpg');">
+        <img src="assets/images/logo-deepal.png" alt="Deepal" />
+      </a>
+      <a href="brands/deepal.html" class="brand-tile" style="background-image: url('assets/images/brand-deepal.jpg');">
+        <img src="assets/images/logo-deepal.png" alt="Deepal" />
+      </a>
+  
+  
+      <a href="brands/deepal.html" class="brand-tile" style="background-image: url('assets/images/brand-deepal.jpg');">
+        <img src="assets/images/logo-deepal.png" alt="Deepal" />
+      </a>
+
+    </div>
+  </section>
+
+  
+
+<style>
+  .site-footer {
+  background-color: #0a0a0a;
+  color: #f0f0f0;
+  padding: 60px 20px 30px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+  text-align: left;
+}
+
+.footer-brand h2 {
+  color: #fff;
+  font-size: 1.8em;
+  margin-bottom: 5px;
+}
+
+.footer-brand p {
+  font-style: italic;
+  color: #ccc;
+}
+
+.footer-contact h3,
+.footer-social h3 {
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.footer-contact p {
+  margin: 5px 0;
+  color: #ddd;
+}
+
+.footer-social .social-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.footer-social a {
+  font-size: 1.5em;
+  color: #fff;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.footer-social a:hover {
+  transform: scale(1.2);
+  color: #007bff;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 0.9em;
+  color: #aaa;
+  border-top: 1px solid #333;
+  padding-top: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .footer-social .social-icons {
+    justify-content: center;
+  }
+}
+
+</style>
+
+
+<footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-brand">
+      <h2>NAMANGAN CHANGAN</h2>
+      <p>Smart Your Future</p>
+    </div>
+
+    <div class="footer-contact">
+      <h3>Contact Us</h3>
+      <p>📞 +998 99 123 45 67</p>
+      <p>📍 Namangan, Uzbekistan</p>
+      <p>🕐 Mon–Sat: 9:00 – 18:00</p>
+    </div>
+
+    <div class="footer-social">
+      <h3>Follow Us</h3>
+      <div class="social-icons">
+        <a href="#" target="_blank" title="Telegram">📲</a>
+        <a href="#" target="_blank" title="Instagram">📸</a>
+        <a href="#" target="_blank" title="Facebook">📘</a>
+        <a href="#" target="_blank" title="YouTube">▶️</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    &copy; 2025 Namangan Changan AutoSalon. All rights reserved.
+  </div>
+</footer>
+
+
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('nav-menu');
+  
+    hamburger.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+    });
+  </script>
+
+
+
+</body>
+</html>
