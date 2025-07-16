@@ -3,18 +3,23 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Namangan Changan AutoSalon</title>
+  <title>Changan Namangan Avtosalon</title>
   <link rel="stylesheet" href="css/style.css" />
   <script src="js/script.js"></script>
- 
-  
+<link rel="icon" href="LOGO.png" type="image/png" />
+<link rel="icon" href="LOGO.png" type="image/x-icon" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 
 
 <body>
+
+
+  <!-- Header -->
   <header class="header-container">
     <div class="container">
-      <div class="logo">NAMANGAN CHANGAN</div>
+      <div class="logo">CHANGAN NAMANGAN </div>
   
       <nav id="nav-menu">
         <a href="index.html">Bosh sahifa</a>
@@ -25,7 +30,6 @@
       <div class="hamburger" id="hamburger">&#9776;</div>
     </div>
   </header>
-  
 
   <script>
     const header = document.querySelector("header");
@@ -39,50 +43,21 @@
     });
   </script>
   
-
+<!-- Hero section -->
   <section class="hero-video">
     <video autoplay muted loop playsinline class="hero-bg-video">
       <source src="assets/hero_videos/banner01.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
     <div class="hero-content">
-      <h1>Namangan changanga xush kelibsiz</h1>
+      <h1>Changan Namangan avtosaloniga xush kelibsiz!</h1>
       <a href="test-drive.html" class="btn">Test Drive uchun ro'yxatdan o'tish</a>
     </div>
   </section>
-  
-  
-
-<!--   
-  <section class="brands-section">
-    <h2 class="section-title">BIZNING MASHXUR BRENDLARIMIZ</h2>
-    <div class="brand-tiles">
-
-      <a href="brands/deepal.html" class="brand-tile" style="background-image: url('assets/images/brand-deepal.jpg');">
-        <img src="assets/images/logo-deepal.png" alt="Deepal" />
-      </a>
-  
-  
-      <a href="brands/deepal.html" class="brand-tile" style="background-image: url('assets/images/brand-deepal.jpg');">
-        <img src="assets/images/logo-deepal.png" alt="Deepal" />
-      </a>
-      <a href="brands/deepal.html" class="brand-tile" style="background-image: url('assets/images/brand-deepal.jpg');">
-        <img src="assets/images/logo-deepal.png" alt="Deepal" />
-      </a>
-  
-  
-      <a href="brands/deepal.html" class="brand-tile" style="background-image: url('assets/images/brand-deepal.jpg');">
-        <img src="assets/images/logo-deepal.png" alt="Deepal" />
-      </a>
-
-    </div>
-  </section>
- -->
-
-
 <br>
 
 
+<!-- Brands -->
 <style>
   .brand-banner {
   display: flex;
@@ -181,7 +156,7 @@
 
   
 
-
+<!-- Footer -->
 <style>
   .site-footer {
   background-color: #002B7F;
@@ -261,36 +236,69 @@
     justify-content: center;
   }
 }
+.footer-map {
+  margin-top: 15px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.footer-map iframe {
+  width: 100%;
+  height: 200px;
+}
+
 
 </style>
 <footer class="site-footer">
   <div class="footer-container">
+    
     <div class="footer-brand">
-      <h2>NAMANGAN CHANGAN</h2>
+      <h2>CHANGAN NAMANGAN</h2>
       <p>Smart Your Future</p>
     </div>
 
     <div class="footer-contact">
       <h3>Bizga bo'g'lanish</h3>
-      <p>📞 +998 99 123 45 67</p>
+      <p>📞 +998 88 500 04 04</p>
+      <p>📞 +998 88 216 20 20</p>
+      <p>📞 +998 90 796 00 04</p>
+      <p>📞 +998 90 795 00 04</p>
       <p>📍 Namangan, O'zbekiston</p>
-      
+
+      <!-- ✅ Google Maps Embed -->
+      <div class="footer-map">
+        <iframe 
+          src="https://maps.google.com/maps?q=41.004619,71.646375&hl=es&z=16&output=embed" 
+          width="100%" 
+          height="200" 
+          style="border:0; border-radius:8px;" 
+          allowfullscreen 
+          loading="lazy">
+        </iframe>
+      </div>
     </div>
 
     <div class="footer-social">
       <h3>Ijtimoiy tarmoqlarimiz</h3>
       <div class="social-icons">
-        <a href="#" target="_blank" title="Telegram">📲</a>
-        <a href="#" target="_blank" title="Instagram">📸</a>
-        <a href="#" target="_blank" title="YouTube">▶️</a>
+        <a href="https://t.me/Changan_namangan1" target="_blank" title="Telegram">
+          <i class="fab fa-telegram"></i> Telegram
+        </a><br>
+        <a href="https://www.instagram.com/changan_namangan?igsh=MXN2YmJ6eTVxczJqNQ==" target="_blank" title="Instagram">
+          <i class="fab fa-instagram"></i> Instagram
+        </a>
       </div>
     </div>
   </div>
 
   <div class="footer-bottom">
-    &copy; 2025 Namangan Changan AutoSalon. All rights reserved.
+    &copy; 2025 Changan Namangan Avtosalon. All rights reserved.<br>
+    &copy; FunnyMation Studio
   </div>
 </footer>
+
+
   <script>
     const hamburger = document.getElementById('hamburger');
     const navMenu = document.getElementById('nav-menu');
