@@ -42,19 +42,43 @@
       }
     });
   </script>
-  
-<!-- Hero section -->
   <section class="hero-video">
-    <video autoplay muted loop playsinline class="hero-bg-video">
+    <video autoplay muted loop playsinline class="hero-bg-video" id="heroVideo">
       <source src="assets/hero_videos/banner01.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
+  
     <div class="hero-content">
       <h1>Changan Namangan avtosaloniga xush kelibsiz!</h1>
-      <a href="test-drive.html" class="btn">Test Drive uchun ro'yxatdan o'tish</a>
     </div>
   </section>
-<br>
+  
+  <script>
+    // ✅ List of available hero videos
+    const videos = [
+      "assets/hero_videos/banner01.mp4",
+      "assets/hero_videos/banner02.mp4",
+      "assets/hero_videos/banner03.mp4"
+    ];
+  
+    let currentIndex = 0;
+    const heroVideo = document.getElementById("heroVideo");
+    const videoSource = heroVideo.querySelector("source");
+  
+    function changeVideo() {
+      // ✅ Move to next video
+      currentIndex = (currentIndex + 1) % videos.length;
+  
+      // ✅ Change source and reload video
+      videoSource.src = videos[currentIndex];
+      heroVideo.load();
+      heroVideo.play();
+    }
+  
+    // ✅ Change video every 10 seconds
+    setInterval(changeVideo, 3000);
+  </script>
+<br>  
 
 
 <!-- Brands -->
@@ -152,9 +176,40 @@
   </a>
 
 </section>
+<br><br>
+
+<section class="test-drive-section">
+  <div class="test-drive-container">
+    <div class="test-drive-text">
+      <h2>Test Drive uchun ro‘yxatdan o‘ting</h2>
+      <p>
+        Changan avtomobillarini sinovdan o‘tkazing va haydash tajribasini 
+        his qiling! Quyidagi tugma orqali telegram admin bilan bog'laning.
+      </p>
+    </div>
+
+    <!-- ✅ Google Form Link -->
+    <h1>
+      <a href="https://t.me/Changan_namangan1" 
+         target="_blank"
+         style="
+            display: inline-block; 
+            background: #012469; 
+            color: #fff; 
+            padding: 12px 25px; 
+            border-radius: 8px; 
+            text-decoration: none; 
+            font-size: 1.2rem;
+            box-shadow: #333;
+            
+         ">
+        Bog'lanish
+      </a>
+    </h1>
+  </div>
+</section>
 
 
-  
 
 <!-- Footer -->
 <style>
